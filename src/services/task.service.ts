@@ -35,7 +35,6 @@ export const find = async (id: number): Promise<Task> => tasks[id];
 
 export const create = async (newtask: BaseTask): Promise<Tasks> => {
     const id = new Date().valueOf();
-   // console.log(newtask)
     tasks[id] = {
       id,
       ...newtask,

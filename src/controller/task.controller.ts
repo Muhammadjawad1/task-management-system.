@@ -90,9 +90,6 @@ taskRouter.get("/tasks", auth, async (req: Request, res: Response, next) => {
   // GET tasks by Assign_to and category 
 taskRouter.get("/task", auth, async (req: Request, res: Response, next) => {
   try {
-    console.log(req.query.assignedTo)
-    console.log(req.query.category)
-
     let assignedTo = req.query.assignedTo;
     let category = req.query.category;
     let type: string="";
