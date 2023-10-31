@@ -8,7 +8,7 @@ import mysql from "mysql2";
     DB: "testdb"
   };
 
-export const conn = mysql.createConnection({
+export const connection = mysql.createConnection({
   host: dbConfig.HOST,
   user: dbConfig.USER,
   password: dbConfig.PASSWORD,
